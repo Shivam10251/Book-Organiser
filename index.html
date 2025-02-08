@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Book Recommendation and Library Organizer</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="app">
+    <h1>Book Recommendation and Library Organizer</h1>
+    
+    <div class="search-bar-container">
+      <input type="text" id="search-query" placeholder="Search for books..." />
+      <select id="genre-select">
+        <option value="">All Genres</option>
+        <option value="fiction">Fiction</option>
+        <option value="science">Science</option>
+        <option value="fantasy">Fantasy</option>
+      </select>
+      <button id="search-button">Search</button>
+    </div>
+
+    <div class="book-list" id="book-list">
+      <!-- Dynamically inserted books will appear here -->
+    </div>
+
+    <div class="library-container">
+      <div class="library">
+        <h2>To Read</h2>
+        <div class="book-list" id="toRead">
+          <!-- Books to read will appear here -->
+        </div>
+
+        <h2>Reading</h2>
+        <div class="book-list" id="reading">
+          <!-- Books being read will appear here -->
+        </div>
+
+        <h2>Finished</h2>
+        <div class="book-list" id="finished">
+          <!-- Finished books will appear here -->
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
